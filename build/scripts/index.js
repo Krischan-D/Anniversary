@@ -180,3 +180,17 @@ function applyFilter(filter){
     }
  
 }
+
+
+const acceptBtn = document.getElementById('acceptBtn');
+const flowerContainer = document.getElementById('flowerContainer');
+
+// Show the container when the DOM is fully loaded
+window.addEventListener('DOMContentLoaded', () => {
+    flowerContainer.classList.add('active');
+});
+
+// Hide the container when the button is clicked
+acceptBtn.addEventListener('click', () => {
+    flowerContainer.classList.remove('active');
+});

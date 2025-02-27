@@ -38,3 +38,16 @@ html{
 .health{
     @apply bg-green-300
 }
+
+.active{
+    @apply flex
+}
+
+#flowerContainer {
+    display: none;
+}
+
+/* Show and center the container when the 'active' class is added */
+#flowerContainer.active {
+    display: flex;
+}

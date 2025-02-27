@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body class="bg-linear-to-r from-[#ffc0cb] to-[#FFFFFF]">
+<body class="bg-linear-to-r from-[#ffc0cb] to-[#FFFFFF] relative">
     <header
         class="text-center w-full flex items-center flex-col fixed top-0 left-0  z-10 py-2 bg-linear-to-r from-[#ffc0cb] to-[#FFFFFF] 
             shadow-sm 
@@ -52,8 +52,13 @@
             </ul>
         </nav>
     </header>
-
-
+    <div class="fixed z-11 w-full h-screen bg-black/40 top-0 left-0 items-center justify-center px-4 transition-all ease-in" id="flowerContainer">
+        <div class="max-w-md p-4 flex flex-col bg-white opacity-100 rounded-xl">
+            <h1 class="text-center text-2xl text-[#c53f67] font-semibold">Flowers for you!</h1>
+            <img src="build/assets/tulips.png" alt="Tulips">
+            <button class="bg-[#ffc0cb] py-2 rounded-md text-white active:bg-red-300 cursor-pointer" id="acceptBtn">Accept flower</button>
+        </div>
+    </div>
     <section class="pt-12 md:pt-0 relative">
         <div
             class="max-w-7xl flex flex-col min-h-[90vh] justify-center text-center  items-center mx-auto px-4 pt-22 -mt-14 relative z-5 ">
