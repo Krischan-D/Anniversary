@@ -10,6 +10,12 @@ const music = [
         singer: 'Billie Eilish ',
         image: 'build/assets/birds of a feather.jpg',
         songPath:'build/music/Billie Eilish - BIRDS OF A FEATHER (Official Lyric Video).mp3'
+    },
+    {
+        title: ' Me & You Together Song ',
+        singer: 'The 1975 ',
+        image: 'build/assets/1975.jpg',
+        songPath:'build/music/The 1975 - Me & You Together Song.mp3'
     }
 ]
 
@@ -80,6 +86,13 @@ progress.parentElement.addEventListener('click', (e) => {
 
 nextBtn.addEventListener('click', () => {
     currentMusicIndex = (currentMusicIndex + 1) % music.length;
+    renderMusic(currentMusicIndex);
+    audio.play();
+});
+
+
+prevBtn.addEventListener('click', () => {
+    currentMusicIndex = (currentMusicIndex - 1) % music.length;
     renderMusic(currentMusicIndex);
     audio.play();
 });
